@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responive menu</title> 
+    <link rel="stylesheet" href="Font-awasome/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="slider()">
+ 
+   <nav>
+    <div class="logo">
+    <h1>EduHelp</h1>
+    </div>
+    <div class="h-list">
+   <ul class="header-list" >
+       <a href="index.html" class="active"><li>Home</li></a>
+       <a href="univesities/index.html"><li>Universities</li></a>
+       <a href="#" data-text="The link is temporally unavailable guys" class="info-model"><li>Tour</li></a>
+       <a href="contact us/index.html"><li>Contact Us</li></a>
+   </ul>
+    </div>
+    <div class="bars">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+    </div>
+   </nav> 
+
+   <div class = "top-wraper">
+     <h1>Would you like to pursue your education career?</h1>
+     <h2><span class="spn-log">EduHelp</span> is ready to help you</h2>
+   </div>
+
+   <div class="central-part">
+    <div class="mission">
+      <div><h2>Our mission</h2></div>
+      <div><img src="images/values.PNG" alt=""></div>
+      <div class="text"><p>Lorem ipsum dolor,  adipisicing elit<span id="dots"> ...</span> <span id="more"> Nam dignissimos dolorem similique provident soluta optio et eaque, aspernatur beatae voluptas?Necessitatibus dolor voluptatibus optio alias cupiditate velit natus ea voluptatum culpa tenetur maiores accusamus vitae aliquam similique vel mollitia temporibus eius officiis veniam, expedita odio laboriosam cum esse! Assumenda Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum necessitatibus reiciendis consequatur officiis odio, nostrum inventore laudantium non porro molestiae soluta magni ad eaque quasi dolorum, veniam, eos unde! Tempora perferendis, laboriosam corporis itaque doloremque sit consequatur blanditiis aliquam animi maiores ipsa ex dolore voluptas saepe enim quas illum? Molestias. fugiat suscipit voluptas?dolorem similique provident soluta optio et eaque, aspernatur beatae voluptas?</span><span id="read" onclick="read()">read more</span></p></div>
+    </div>
+      <div class="goals">
+       <div><h2>Our goals</h2></div>
+       <div><img src="images/goals.PNG" alt=""></div>
+       <div class="text"><p>Lorem ipsum dolor,  adipisicing elit<span id="dots1"> ...</span> <span id="more1">Nam dignissimos dolorem similique provident soluta optio et eaque, aspernatur beatae voluptas?Necessitatibus dolor voluptatibus optio alias cupiditate velit natus ea voluptatum culpa tenetur maiores accusamus vitae aliquam similique vel mollitia temporibus eius officiis veniam, expedita odio laboriosam cum esse! Assumenda Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum necessitatibus reiciendis consequatur officiis odio, nostrum inventore laudantium non porro molestiae soluta magni ad eaque quasi dolorum, veniam, eos unde! Tempora perferendis, laboriosam corporis itaque doloremque sit consequatur blanditiis aliquam animi maiores ipsa ex dolore voluptas saepe enim quas illum? Molestias. fugiat suscipit voluptas?dolorem similique provident soluta optio et eaque, aspernatur beatae voluptas?</span> <span id="read1" onclick="read1()">read more</span></p></div> 
+      </div>
+      <div class="actions">
+      <div><h2>Our actions</h2></div>
+      <div><img src="images/actions.PNG" alt=""></div>
+      <div><p>Lorem ipsum dolor, adipisicing elit<span id="dots2"> ...</span> <span id="more2"> Nam dignissimos Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolor voluptatibus optio alias cupiditate velit natus ea voluptatum culpa tenetur maiores accusamus vitae aliquam similique vel mollitia temporibus eius officiis veniam, expedita odio laboriosam cum esse! Assumenda Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum necessitatibus reiciendis consequatur officiis odio, nostrum inventore laudantium non porro molestiae soluta magni ad eaque quasi dolorum, veniam, eos unde! Tempora perferendis, laboriosam corporis itaque doloremque sit consequatur blanditiis aliquam animi maiores ipsa ex dolore voluptas saepe enim quas illum? Molestias. fugiat suscipit voluptas?dolorem similique provident soluta optio et eaque, aspernatur beatae voluptas?</span> <span id="read2" onclick="read2()">read more</span></p></div>
+      
+      </div>
+    </div>
+
+    <div class="section">
+    <div class="activities">
+      <h1>What we do</h1>
+      <ul>
+        <li>We solve any cases from our students</li></br></br>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li></br></br>
+        <li>Lorem ipsum dolor sit amet.</li></br></br>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+        
+      </ul>
+    </div>
+    <div class="testmonies">
+      <h1>Memories</h1>
+      <img src="images/tour-image4.PNG" id="sliding" alt="">
+    </div>
+    </div>
+    <div class="footer">
+      <div class="social-media">
+        <h3>Below are our partners</h3>
+        <div>
+        <a href="#"><img src="images/andela.PNG" alt=""></a>
+        <a href="#"><img src="images/UNHCR.PNG" alt=""></a>
+        <a href="#"><img src="images/uncef.PNG" alt=""></a>
+      </div>
+      </div>
+      <div class="partners">
+        <h3>Follow us on social media</h3>
+        <div>
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-instagram-square"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+      </div> 
+      </div>
+    </div>
+   <script>
+    var i=0; 
+
+    function read(){
+    if(!i){
+    document.getElementById("more").style.display="inline";
+    document.getElementById("dots").style.display="none";
+    document.getElementById("read").innerHTML="Read Less";
+    i=1;
+    } else{
+        document.getElementById("more").style.display="none";
+        document.getElementById("dots").style.display="inline";
+        document.getElementById("read").innerHTML="Read More";
+        i=0;
+    }
+
+    }
+
+    var i=0; 
+
+    function read1(){
+    if(!i){
+    document.getElementById("more1").style.display="inline";
+    document.getElementById("dots1").style.display="none";
+    document.getElementById("read1").innerHTML="Read Less";
+    i=1;
+    } else{
+        document.getElementById("more1").style.display="none";
+        document.getElementById("dots1").style.display="inline";
+        document.getElementById("read1").innerHTML="Read More";
+        i=0;
+    }
+    }
+
+    var i=0;
+
+function read2(){
+if(!i){
+document.getElementById("more2").style.display="inline";
+document.getElementById("dots2").style.display="none";
+document.getElementById("read2").innerHTML="Read Less";
+i=1;
+} else{
+    document.getElementById("more2").style.display="none";
+    document.getElementById("dots2").style.display="inline";
+    document.getElementById("read2").innerHTML="Read More";
+    i=0;
+}
+}
+
+var i=0; 
+
+
+var sliding = document.getElementById("sliding");
+var images = new Array(
+  "images/tour-image4.png",
+   "images/tour-image1.png",
+   "images/thiernopes.png",
+   "images/tour-image2.png",
+   "images/thierry.png",
+   "images/tour-image3.png",
+   "images/darlen.png",
+   "images/tour-image5.png",
+   "images/eva.png"
+);
+
+
+var i =0;
+var len = images.length;
+function slider(){
+  if(i>len-1){
+    i=0;
+  }
+
+  sliding.src = images[i];
+  i++;
+  setTimeout("slider()",4000);
+}
+
+
+  </script>
+   
+</body>
+</html>

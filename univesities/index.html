@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>universities</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+        <h2 id ="logo">Th@</h2>
+        <h3 class="eduhelp">EduHelp</h3>
+        </nav>
+
+        <section>
+            <div class="main">
+          <img src="van.PNG" alt="">
+          <h1 class="sentence">Your future car</h1>
+        </div>
+        </section>
+
+        <div class="slider"></div>
+    </header>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js" integrity="sha512-ia1SI1AX8rsFOd2+7ZKAcdYIQR3dNWYWWtINJs3L65GF4vZhXyNu96SOd3MYTp5ZSOXoGl/kwWjUdqOXe1osIA==" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TimelineMax.min.js" integrity="sha512-Fien2rCWak/F9Cb8pFz2Yu5U1ZmHFousYCTWFCDM6A/iaAqwXywT7Old2dthLQ02If7PigKQbIgzKx17an7o/A==" crossorigin="anonymous"></script>
+
+    <script>
+        
+        const slider = document.querySelector(".slider");
+        const main = document.querySelector(".main");
+        const logo = document.querySelector("#logo");
+        const sentence = document.querySelector(".sentence");
+        const eduhelp = document.querySelector(".eduhelp");
+
+        const tl = new TimelineMax();
+        tl.fromTo(main, 4, {height: "0%"}, {height: '80%', ease: Power2.easeInOut})
+           .fromTo(main,4.2,{width:"100%"},{width:"80%",ease: Power2.easeInOut}, "-=4")
+           .fromTo(slider, 4.2, {x: "-100%"}, {x: "0%", ease: Power2.easeInOut},"-=4.2")
+           .fromTo(logo, 3.5, {opacity: 0, x: 30}, {opacity: 1, x:0}, "-=3.5")
+           .fromTo(eduhelp, 3.5, {opacity: 0, x: 30}, {opacity: 1, x:0}, "-=3.5")
+           .fromTo(sentence, 3.5, {opacity: 0, x: 30}, {opacity: 1, x:0}, "-=3.5")
+        
+    </script>
+</body>
+</html>

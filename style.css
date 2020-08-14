@@ -1,0 +1,370 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+}
+
+
+.logo{
+    text-shadow:1px 1px 20px rgba(185, 77, 15, 0.952);
+    color: rgb(255, 153, 0);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(24, 66, 121);  
+    height: 8vh;
+    align-items: center;
+    opacity: 0.9;
+    position: sticky;
+    top: 0px;
+}
+
+.bars div{
+    background-color:  rgb(180, 151, 131);
+    width:25px;
+    height:3px;
+    margin: 5px;
+}
+
+.header-list{
+    display: flex; 
+    justify-content: space-around;
+    font-size:20px;
+}
+
+
+.h-list{
+    width:35%; 
+}
+.bars{
+    display: none;
+}
+
+.header-list li{
+    list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(180, 151, 131);
+}
+
+.top-wraper{
+    width: 100%;
+    height: 600px;
+    background-image: url(bg-image1.PNG);
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.top-wraper h1{
+ padding-top: 200px;
+ color: rgb(24, 66, 121);  
+ font-size: 50px;
+ text-align: center;
+ opacity: 0.7;
+}
+
+.top-wraper h2{
+    color: rgb(24, 66, 121);  
+    font-size: 30px;
+    text-align: center;
+    margin-top: 100px;
+    opacity: 0.7;
+   }
+
+.mission, .goals, .actions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:50px;
+    font-size:40px
+
+}
+
+.central-part div > h2{
+    margin-bottom: 20px;
+    font-size:30px;
+}
+.spn-log{
+    text-shadow:1px 1px 20px rgba(185, 77, 15, 0.952);
+    color: rgb(255, 153, 0);
+    background-color: rgb(24, 66, 121);  
+}
+
+.central-part{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex:1;
+  align-items: center;
+  background-color: rgba(52, 223, 223, 0.555);
+}
+
+img{
+    width:300px;
+    height:200px;
+    object-fit: cover;
+}
+
+
+p{
+    width: 300px;
+    height:100px;
+    text-align: justify;
+    font-size: 20px;
+    overflow:scroll;
+
+}
+
+
+#more{
+    display: none;
+}
+
+.central-part > div #read, #read1, #read2{
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(bg-image2.PNG);
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgba(6, 15, 66, 0.932); 
+    height:500px;
+}
+
+.section div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section div h1 {
+    margin-bottom: 20px;
+    margin-top: 50px;
+    font-size:30px;
+}
+.testmonies{
+    position: relative;
+}
+.testmonies >img{
+    width:400px;
+    height:300px;
+    object-fit: cover;
+}
+
+.activities ul{
+    width:400px;
+    height:300px;
+}
+.activities ul li{
+    font-size: 20px;
+}
+
+#sliding{
+    animation: zoom 4s linear infinite;
+}
+@keyframes zoom {
+    0%{
+        transform: scale(1);
+    }
+
+    15%{
+        transform: scale(1.1);
+    }
+
+    85%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+    
+}
+
+.social-media img{
+    width:100px;
+    height:50px;
+    margin-left: 20px;
+    object-fit: cover; 
+}
+
+.footer{
+    background-color:rgb(24, 66, 121); 
+    color:rgb(180, 151, 131);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+i{
+    font-size:40px;
+    margin-left:20px;
+}
+.social-media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fa-facebook-square{
+    color: white;
+}
+.fa-instagram-square{
+    color: red;
+}
+.fa-pinterest {
+    color: gold;
+}
+
+h3{
+    margin-top: 30px;
+    margin-bottom:20px;
+}
+
+@media all and (max-width:1024px){
+.central-part{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.actions{
+    margin-top: 50px;
+}
+
+.goals{
+    margin-top: 50px;
+    margin-left:50px;
+}
+
+.mission{
+    margin-top:50px;
+}
+
+p{
+    width: 400px;
+    height:100%;
+    text-align: justify;
+    font-size: 30px;
+}
+
+img{
+    width:400px;
+    height:300px;
+}  
+
+.central-part div > h2{
+    margin-bottom: 20px;
+    font-size:40px;
+}
+
+.activities > ul li {
+font-size: 30px
+}
+
+.section div h1 {
+    font-size:40px;
+}
+}
+@media all and (max-width:768px){
+
+ .bars{
+     display: block;
+ }
+ .h-list .header-list{
+   position: absolute;
+   top: 8vh;
+   right:0px;
+   height:30vh;
+   display: flex;
+   flex-direction: column;
+   background-color: rgb(24, 66, 121);  
+   color: rgb(238, 232, 232);  
+   align-items: center;
+   width: 50%;
+   opacity: 0.8;
+
+ } 
+
+
+ p{
+    width: 300px;
+    height:100%;
+    text-align: justify;
+    font-size: 30px;
+}
+
+img{
+    width:300px;
+    height:200px;
+}  
+
+.testmonies >img{
+    width:300px;
+    height:200px;
+}
+.activities ul{
+    width:300px;
+    height:200px;
+}
+.activities ul li{
+    font-size: 20px;
+}
+
+.central-part div > h2{
+    margin-top: 10px;
+    font-size:30px;
+}
+
+.section div h1 {
+    margin-top: 20px;
+    font-size:30px;
+}
+}
+
+@media all and (max-width:600px){
+    p{ 
+        font-size: 20px;
+    }  
+    .goals{
+        margin-left:0px;
+    }
+
+    .section{
+        flex-wrap: wrap;
+        height:800px;
+    }
+
+    .testmonies{
+        margin-top: 30px;
+    }
+
+    .activities ul li{
+       text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
